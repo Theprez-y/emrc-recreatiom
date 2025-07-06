@@ -23,7 +23,7 @@ const ServicesPage = () => {
     <div>
       <ServicesCarousel 
         services={services}
-        primaryColor="#003756" // You can customize this
+        primaryColor="#003756" 
       />
     </div>
   );
