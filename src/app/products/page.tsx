@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const ProductsPage = () => {
   return (
+    <>
+    <Header />
     <div>
       {/* Hero Section */}
       <div className="bg-[#fcfcfc]">
@@ -14,17 +18,13 @@ const ProductsPage = () => {
                 EMRC PRODUCTS
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-[800] bg-gradient-to-r from-primary to-cl_green bg-clip-text text-transparent leading-tight mb-4 mt-4">
-              Empowering Energy<br />
-              Markets Through<br />
-              <span className="relative inline-block text-black">Innovation</span>
-            </h1>
-            <p className="max-w-2xl mb-8" style={{ opacity: 1 }}>
+           <h1 className="text-4xl md:text-6xl font-[800] bg-gradient-to-r from-[#002236]  to-[#c3ee06] bg-clip-text text-transparent leading-tight mb-4 mt-4">Empowering Energy<br />Markets Through<br/><span className="relative inline-block text-black">Innovation</span></h1>
+            <p className="max-w-2xl mb-8 text-black" style={{ opacity: 1 }}>
               Welcome to the future of energy market solutions. At EMRC, we combine deep industry expertise with cutting-edge technology to deliver powerful software tools that transform how businesses operate in the energy sector.
             </p>
             <div className="flex space-x-4" style={{ opacity: 1, transform: 'none' }}>
               <Link href="/contact" legacyBehavior>
-                <a className="relative bg-primary text-white px-8 py-4 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
+                <a className="relative bg-[#002236] text-white px-8 py-4 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl">
                   Get Started
                   <span className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity rounded-lg"></span>
                 </a>
@@ -60,7 +60,7 @@ const ProductsPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/nesi-2.png" 
+                  src="/nesi-2.png" 
                   alt="Energy Sent Out" 
                   width={500}
                   height={256}
@@ -69,7 +69,7 @@ const ProductsPage = () => {
               </div>
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/nesi-3.png" 
+                  src="/nesi-3.png" 
                   alt="Total Customer Population" 
                   width={500}
                   height={256}
@@ -83,7 +83,7 @@ const ProductsPage = () => {
                   <ul className="list-none">
                     <li className="mb-2">
                       <Link href="/products/elec-t" legacyBehavior>
-                        <a className="text-primary text-[1rem] hover:text-cl_green hover:underline transition-all">
+                        <a className="text-primary text-[1rem] hover:text-[#c3ee06]] hover:underline transition-all">
                           View Product Information
                         </a>
                       </Link>
@@ -110,7 +110,7 @@ const ProductsPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/the-ravens/commercial page.png" 
+                  src="/commercial page.png" 
                   alt="Commercial Workspace" 
                   width={500}
                   height={256}
@@ -119,7 +119,7 @@ const ProductsPage = () => {
               </div>
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/the-ravens/finance.png" 
+                  src="/finance.png" 
                   alt="Financial Workspace" 
                   width={500}
                   height={256}
@@ -128,7 +128,7 @@ const ProductsPage = () => {
               </div>
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/the-ravens/staff.png" 
+                  src="/staff.png" 
                   alt="Staff Management" 
                   width={500}
                   height={256}
@@ -137,7 +137,7 @@ const ProductsPage = () => {
               </div>
               <div className="w-ful bg-neutral-200 p-4 rounded-[5px]">
                 <Image 
-                  src="/products/the-ravens/gis.png" 
+                  src="/gis.png" 
                   alt="GIS" 
                   width={500}
                   height={256}
@@ -150,7 +150,7 @@ const ProductsPage = () => {
                 <div className="mb-4 md:mb-0">
                   <ul className="list-none">
                     <li className="mb-2">
-                      <Link href="/products/the-ravens" legacyBehavior>
+                      <Link href="/the-ravens" legacyBehavior>
                         <a className="text-primary text-[1rem] hover:text-cl_green hover:underline transition-all">
                           View Product Information
                         </a>
@@ -210,7 +210,7 @@ const ProductsPage = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-primary text-white py-24 lg:py-32 relative overflow-hidden">
+      <div className="bg-[#002236] text-white py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgOGgxNnYtOEgwdjh6bTE2IDB2OEgwdjJoMTZ2LTh6TTAgMTZoMTZ2LThIMHY4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==')]"></div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center space-y-8">
@@ -229,7 +229,7 @@ const ProductsPage = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-              <button className="bg-white text-primary px-10 py-5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
+              <button className="bg-white text-[#002236] px-10 py-5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
                 </svg>
@@ -240,6 +240,8 @@ const ProductsPage = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
